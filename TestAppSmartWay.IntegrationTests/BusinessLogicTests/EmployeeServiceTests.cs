@@ -133,9 +133,9 @@ public class EmployeeServiceTests : IntegrationTestBase
         var insertPassportResult = await PassportRepository.InsertAsync(passport);
         var insertDepartmentResult = await DepartmentRepository.InsertAsync(department);
         var employee = DomainHelper.CreateEmployeeEntity(insertCompanyResult.Id, insertPassportResult, insertDepartmentResult);
-        var nameForUpdate = Guid.NewGuid().ToString();
-        var surnameForUpdate = Guid.NewGuid().ToString();
-        var phoneForUpdate = Guid.NewGuid().ToString();
+        var nameForUpdate = "nameForUpdate";
+        var surnameForUpdate = "surnameForUpdate";
+        var phoneForUpdate = "surnameForUpdate";
         var passportForUpdate = DomainHelper.CreatePassportEntity();
         var companyForUpdate = DomainHelper.CreateCompanyEntity();
         var departmentForUpdate = DomainHelper.CreateDepartmentEntity();

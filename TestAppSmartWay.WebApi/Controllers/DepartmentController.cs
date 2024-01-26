@@ -12,7 +12,7 @@ public class DepartmentController(IDepartmentRepository departmentRepository) : 
     [HttpPost]
     public async Task<IActionResult> CreateDepartment([FromBody] CreateDepartmentRequest request)
     {
-        var department = DepartmentEntity.Create(request.Name, request.Phone);
+        var department = new DepartmentEntity(request.Name, request.Phone);
 
         var insertDepartmentResult = await departmentRepository.InsertAsync(department);
 
