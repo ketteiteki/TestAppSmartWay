@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using TestAppSmartWay.Application.Requests;
 using TestAppSmartWay.Domain.Entities;
+using TestAppSmartWay.Domain.Responses;
 using TestAppSmartWay.Infrastructure.Repositories.Interfaces;
+using TestAppSmartWay.WebApi.Extensions;
 
 namespace TestAppSmartWay.WebApi.Controllers;
 
@@ -16,6 +18,6 @@ public class CompanyController(ICompanyRepository companyRepository) : Controlle
 
         var insertCompanyResult = await companyRepository.InsertAsync(company);
 
-        return Ok(insertCompanyResult.Id);
+        return new Result<int>(insertCompanyResult.Id).ToActionResult();
     }
 }

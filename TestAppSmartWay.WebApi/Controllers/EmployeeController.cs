@@ -2,6 +2,8 @@ using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using TestAppSmartWay.Application.BusinessLogic;
 using TestAppSmartWay.Application.Requests;
+using TestAppSmartWay.Domain.Entities;
+using TestAppSmartWay.Domain.Responses;
 using TestAppSmartWay.Infrastructure.Repositories.Interfaces;
 using TestAppSmartWay.WebApi.Extensions;
 
@@ -14,19 +16,19 @@ public class EmployeeController(
     EmployeeService employeeService) : ControllerBase
 {
     [HttpGet("Company/{id:int}")]
-    public async Task<IActionResult> GetEmployeesByCompanyId(int id, [FromQuery] int offset, [FromQuery] int limit)
+    public async Task<IActionResult> GetEmployeesByCompanyId(int id, [FromQuery] int offset = 0, [FromQuery] int limit = 20)
     {
         var employees = await employeeRepository.GetEnumerableByCompanyIdAsync(id, offset, limit);
 
-        return Ok(employees);
+        return new Result<IEnumerable<EmployeeEntity>>(employees).ToActionResult();
     }
     
     [HttpGet("Department/{id:int}")]
-    public async Task<IActionResult> GetEmployeesByDepartmentId(int id, [FromQuery] int offset, [FromQuery] int limit)
+    public async Task<IActionResult> GetEmployeesByDepartmentId(int id, [FromQuery] int offset = 0, [FromQuery] int limit = 20)
     {
         var employees = await employeeRepository.GetEnumerableByDepartmentIdAsync(id, offset, limit);
 
-        return Ok(employees);
+        return new Result<IEnumerable<EmployeeEntity>>(employees).ToActionResult();
     }
     
     [HttpPost]

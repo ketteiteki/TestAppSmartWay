@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using TestAppSmartWay.Application.Requests;
 using TestAppSmartWay.Domain.Entities;
+using TestAppSmartWay.Domain.Responses;
 using TestAppSmartWay.Infrastructure.Repositories.Interfaces;
+using TestAppSmartWay.WebApi.Extensions;
 
 namespace TestAppSmartWay.WebApi.Controllers;
 
@@ -16,6 +18,6 @@ public class PassportController(IPassportRepository passportRepository) : Contro
 
         var insertPassportResult = await passportRepository.InsertAsync(passport);
         
-        return Ok(insertPassportResult.Id);
+        return new Result<int>(insertPassportResult.Id).ToActionResult();
     }
 }

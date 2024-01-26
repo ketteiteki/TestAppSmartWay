@@ -6,6 +6,7 @@ using TestAppSmartWay.Infrastructure.Migrations;
 using TestAppSmartWay.Infrastructure.Repositories;
 using TestAppSmartWay.Infrastructure.Repositories.Interfaces;
 using TestAppSmartWay.WebApi.Extensions;
+using TestAppSmartWay.WebApi.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +48,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<ValidationMiddleware>();
 
 app.MapControllers();
 
