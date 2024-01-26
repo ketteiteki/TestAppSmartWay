@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cHmw5bCOFWcoibTym+WeNq1QaAAlHmpz82WZP7k3k2g=",
+  "Source": "TestAppSmartWay.WebApi",
+  "BasePath": "_content/TestAppSmartWay.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

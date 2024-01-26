@@ -1,0 +1,12 @@
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/bin/Debug/net8.0/TestAppSmartWay.Domain.deps.json
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/bin/Debug/net8.0/TestAppSmartWay.Domain.dll
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/bin/Debug/net8.0/TestAppSmartWay.Domain.pdb
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/TestAppSmartWay.Domain.csproj.AssemblyReference.cache
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/TestAppSmartWay.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/TestAppSmartWay.Domain.AssemblyInfoInputs.cache
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/TestAppSmartWay.Domain.AssemblyInfo.cs
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/TestAppSmartWay.Domain.csproj.CoreCompileInputs.cache
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/TestAppSmartWay.Domain.dll
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/refint/TestAppSmartWay.Domain.dll
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/TestAppSmartWay.Domain.pdb
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Domain/obj/Debug/net8.0/ref/TestAppSmartWay.Domain.dll

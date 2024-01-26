@@ -1,0 +1,6 @@
+@TestAppSmartWay.WebApi_HostAddress = http://localhost:5010
+
+GET {{TestAppSmartWay.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

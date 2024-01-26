@@ -1,0 +1,17 @@
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/bin/Debug/net8.0/TestAppSmartWay.Application.deps.json
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/bin/Debug/net8.0/TestAppSmartWay.Application.dll
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/bin/Debug/net8.0/TestAppSmartWay.Application.pdb
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/bin/Debug/net8.0/TestAppSmartWay.Domain.dll
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/bin/Debug/net8.0/TestAppSmartWay.Infrastructure.dll
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/bin/Debug/net8.0/TestAppSmartWay.Infrastructure.pdb
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/bin/Debug/net8.0/TestAppSmartWay.Domain.pdb
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/TestAppSmartWay.Application.csproj.AssemblyReference.cache
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/TestAppSmartWay.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/TestAppSmartWay.Application.AssemblyInfoInputs.cache
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/TestAppSmartWay.Application.AssemblyInfo.cs
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/TestAppSmartWay.Application.csproj.CoreCompileInputs.cache
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/TestAppSmartWay.Application.csproj.CopyComplete
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/TestAppSmartWay.Application.dll
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/refint/TestAppSmartWay.Application.dll
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/TestAppSmartWay.Application.pdb
+/home/dmitry/RiderProjects/TestAppSmartWay/TestAppSmartWay.Application/obj/Debug/net8.0/ref/TestAppSmartWay.Application.dll
