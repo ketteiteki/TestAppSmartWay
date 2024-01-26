@@ -10,13 +10,10 @@ public class DepartmentEntity
     
     private DepartmentEntity() {}
 
-    public static DepartmentEntity Create(string name, string phone)
+    public DepartmentEntity(string name, string phone)
     {
-        return new DepartmentEntity
-        {
-            Name = name,
-            Phone = phone
-        };
+        Name = name;
+        Phone = phone;
     }
     
     public void UpdateId(int id)

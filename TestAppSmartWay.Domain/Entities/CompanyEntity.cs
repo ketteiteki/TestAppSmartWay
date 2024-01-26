@@ -7,12 +7,9 @@ public class CompanyEntity
     public string Name { get; private set; }
 
     private CompanyEntity() {}
-    
-    public static CompanyEntity Create(string name)
+
+    public CompanyEntity(string name)
     {
-        return new CompanyEntity
-        {
-            Name = name
-        };
+        Name = name;
     }
 }

@@ -7,7 +7,7 @@ public class DomainHelper
 {
     public static EmployeeEntity CreateEmployeeEntity(int companyId, PassportEntity passport, DepartmentEntity department)
     {
-        var employee = EmployeeEntity.Create(
+        var employee = new EmployeeEntity(
             Guid.NewGuid().ToString(), 
             Guid.NewGuid().ToString(), 
             "+70000000000", 
@@ -24,7 +24,7 @@ public class DomainHelper
         var number1 = random.Next(1000, 9999);
         var number2 = random.Next(100000, 999999);
         
-        return PassportEntity.Create(PassportType.Regular, $"{number1} {number2}");
+        return new PassportEntity(PassportType.Regular, $"{number1} {number2}");
     }
     
     public static DepartmentEntity CreateDepartmentEntity()
@@ -37,11 +37,11 @@ public class DomainHelper
 
         var phone = string.Concat("+", number1, number2, number3, number4);
         
-        return DepartmentEntity.Create(Guid.NewGuid().ToString(), phone);
+        return new DepartmentEntity(Guid.NewGuid().ToString(), phone);
     }
 
     public static CompanyEntity CreateCompanyEntity()
     {
-        return CompanyEntity.Create(Guid.NewGuid().ToString());
+        return new CompanyEntity(Guid.NewGuid().ToString());
     }
 }

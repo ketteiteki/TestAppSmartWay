@@ -12,13 +12,10 @@ public class PassportEntity
     
     private PassportEntity() {}
 
-    public static PassportEntity Create(PassportType type, string number)
+    public PassportEntity(PassportType type, string number)
     {
-        return new PassportEntity
-        {
-            Type = type,
-            Number = number
-        };
+        Type = type;
+        Number = number;
     }
 
     public void UpdateId(int id)

@@ -35,7 +35,7 @@ public class EmployeeService(
             return new Result<int>(new Error(ResponseMessages.DepartmentNotFound));
         }
         
-        var employee = EmployeeEntity.Create(name, surname, phone, companyId, passport, department);
+        var employee = new EmployeeEntity(name, surname, phone, companyId, passport, department);
 
         var insertedEmployee = await employeeRepository.InsertAsync(employee);
         
@@ -100,7 +100,7 @@ public class EmployeeService(
                 case "DepartmentId": 
                     var departmentId = item.Value.GetInt32();
                     if (departmentId == default) continue;
-                    var department = await passportRepository.GetByIdAsync(departmentId);
+                    var department = await departmentRepository.GetByIdAsync(departmentId);
                     if (department == null)
                     {
                         return new Result<int>(new Error(ResponseMessages.DepartmentNotFound));

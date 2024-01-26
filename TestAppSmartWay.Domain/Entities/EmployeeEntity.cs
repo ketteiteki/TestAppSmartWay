@@ -18,18 +18,15 @@ public class EmployeeEntity
     
     private EmployeeEntity() {}
 
-    public static EmployeeEntity Create(string name, string surname, string phone, int companyId, 
+    public EmployeeEntity(string name, string surname, string phone, int companyId,
         PassportEntity passport, DepartmentEntity department)
     {
-        return new EmployeeEntity
-        {
-            Name = name,
-            Surname = surname,
-            Phone = phone,
-            CompanyId = companyId,
-            Passport = passport,
-            Department = department
-        };
+        Name = name;
+        Surname = surname;
+        Phone = phone;
+        CompanyId = companyId;
+        Passport = passport;
+        Department = department;
     }
 
     public void UpdateName(string name)

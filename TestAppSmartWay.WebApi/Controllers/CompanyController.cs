@@ -12,7 +12,7 @@ public class CompanyController(ICompanyRepository companyRepository) : Controlle
     [HttpPost]
     public async Task<IActionResult> CreateCompany([FromBody] CreateCompanyRequest request)
     {
-        var company = CompanyEntity.Create(request.Name);
+        var company = new CompanyEntity(request.Name);
 
         var insertCompanyResult = await companyRepository.InsertAsync(company);
 
